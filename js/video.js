@@ -8,11 +8,11 @@ window.addEventListener("load", function() {
 	var video = document.getElementById("player1");
 	video.autoplay = false;
 	video.loop = false;
-	let vid_volume = video.volume * 100;
-	document.getElementById("volume").innerHTML = vid_volume.toString() + "%";
 
 	document.getElementById("play").addEventListener("click", function() {
 		console.log("Play video")
+		let vid_volume = video.volume * 100;
+		document.getElementById("volume").innerHTML = vid_volume.toString() + "%";
 		video.play();
 	});
 	
